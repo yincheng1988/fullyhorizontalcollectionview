@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DA6B1B81B3933660022B9A9 /* FullyHorizontalFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA6B1A11B3933660022B9A9 /* FullyHorizontalFlowLayout.framework */; };
+		2DA6B1B91B3933660022B9A9 /* FullyHorizontalFlowLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA6B1A11B3933660022B9A9 /* FullyHorizontalFlowLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DA6B1C01B39339C0022B9A9 /* FullyHorizontalFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30507E6119F05ADC00681BE0 /* FullyHorizontalFlowLayout.m */; };
+		2DA6B1C11B3933A20022B9A9 /* FullyHorizontalFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 30507E6019F05ADC00681BE0 /* FullyHorizontalFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30507E3A19F0560D00681BE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30507E3919F0560D00681BE0 /* main.m */; };
 		30507E3D19F0560D00681BE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30507E3C19F0560D00681BE0 /* AppDelegate.m */; };
 		30507E4319F0560D00681BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30507E4119F0560D00681BE0 /* Main.storyboard */; };
@@ -18,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2DA6B1B61B3933660022B9A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30507E2C19F0560D00681BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA6B1A01B3933660022B9A9;
+			remoteInfo = FullyHorizontalFlowLayout;
+		};
 		30507E4E19F0560D00681BE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 30507E2C19F0560D00681BE0 /* Project object */;
@@ -27,7 +38,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2DA6B1971B3932BD0022B9A9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DA6B1B91B3933660022B9A9 /* FullyHorizontalFlowLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2DA6B1A11B3933660022B9A9 /* FullyHorizontalFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FullyHorizontalFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA6B1A41B3933660022B9A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30507E3419F0560D00681BE0 /* FullyHorizontalCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullyHorizontalCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30507E3819F0560D00681BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30507E3919F0560D00681BE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,10 +73,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2DA6B19D1B3933660022B9A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30507E3119F0560D00681BE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA6B1B81B3933660022B9A9 /* FullyHorizontalFlowLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +98,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DA6B1A21B3933660022B9A9 /* FullyHorizontalFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6B1A31B3933660022B9A9 /* Supporting Files */,
+			);
+			path = FullyHorizontalFlowLayout;
+			sourceTree = "<group>";
+		};
+		2DA6B1A31B3933660022B9A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6B1A41B3933660022B9A9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		30507E2B19F0560D00681BE0 = {
 			isa = PBXGroup;
 			children = (
 				30507E3619F0560D00681BE0 /* FullyHorizontalCollectionView */,
 				30507E5019F0560D00681BE0 /* FullyHorizontalCollectionViewTests */,
+				2DA6B1A21B3933660022B9A9 /* FullyHorizontalFlowLayout */,
 				30507E3519F0560D00681BE0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +129,7 @@
 			children = (
 				30507E3419F0560D00681BE0 /* FullyHorizontalCollectionView.app */,
 				30507E4D19F0560D00681BE0 /* FullyHorizontalCollectionViewTests.xctest */,
+				2DA6B1A11B3933660022B9A9 /* FullyHorizontalFlowLayout.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +179,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2DA6B19E1B3933660022B9A9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6B1C11B3933A20022B9A9 /* FullyHorizontalFlowLayout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2DA6B1A01B3933660022B9A9 /* FullyHorizontalFlowLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA6B1BA1B3933670022B9A9 /* Build configuration list for PBXNativeTarget "FullyHorizontalFlowLayout" */;
+			buildPhases = (
+				2DA6B19C1B3933660022B9A9 /* Sources */,
+				2DA6B19D1B3933660022B9A9 /* Frameworks */,
+				2DA6B19E1B3933660022B9A9 /* Headers */,
+				2DA6B19F1B3933660022B9A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FullyHorizontalFlowLayout;
+			productName = FullyHorizontalFlowLayout;
+			productReference = 2DA6B1A11B3933660022B9A9 /* FullyHorizontalFlowLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		30507E3319F0560D00681BE0 /* FullyHorizontalCollectionView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30507E5719F0560D00681BE0 /* Build configuration list for PBXNativeTarget "FullyHorizontalCollectionView" */;
@@ -134,10 +216,12 @@
 				30507E3019F0560D00681BE0 /* Sources */,
 				30507E3119F0560D00681BE0 /* Frameworks */,
 				30507E3219F0560D00681BE0 /* Resources */,
+				2DA6B1971B3932BD0022B9A9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2DA6B1B71B3933660022B9A9 /* PBXTargetDependency */,
 			);
 			name = FullyHorizontalCollectionView;
 			productName = FullyHorizontalCollectionView;
@@ -171,6 +255,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Philippe Auriach";
 				TargetAttributes = {
+					2DA6B1A01B3933660022B9A9 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					30507E3319F0560D00681BE0 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -195,11 +282,19 @@
 			targets = (
 				30507E3319F0560D00681BE0 /* FullyHorizontalCollectionView */,
 				30507E4C19F0560D00681BE0 /* FullyHorizontalCollectionViewTests */,
+				2DA6B1A01B3933660022B9A9 /* FullyHorizontalFlowLayout */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2DA6B19F1B3933660022B9A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30507E3219F0560D00681BE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +315,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2DA6B19C1B3933660022B9A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6B1C01B39339C0022B9A9 /* FullyHorizontalFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		30507E3019F0560D00681BE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +345,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2DA6B1B71B3933660022B9A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA6B1A01B3933660022B9A9 /* FullyHorizontalFlowLayout */;
+			targetProxy = 2DA6B1B61B3933660022B9A9 /* PBXContainerItemProxy */;
+		};
 		30507E4F19F0560D00681BE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 30507E3319F0560D00681BE0 /* FullyHorizontalCollectionView */;
@@ -269,6 +377,55 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2DA6B1BB1B3933670022B9A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FullyHorizontalFlowLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DA6B1BC1B3933670022B9A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = FullyHorizontalFlowLayout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		30507E5519F0560D00681BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -404,6 +561,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2DA6B1BA1B3933670022B9A9 /* Build configuration list for PBXNativeTarget "FullyHorizontalFlowLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6B1BB1B3933670022B9A9 /* Debug */,
+				2DA6B1BC1B3933670022B9A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		30507E2F19F0560D00681BE0 /* Build configuration list for PBXProject "FullyHorizontalCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
